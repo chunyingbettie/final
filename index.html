@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <title>Betty Zhang</title>
+    <link rel="stylesheet" type="text/css" href="home.css"/>
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <script>
+    function changeToBlink(){
+        var imageElement = document.getElementById("profile_img");
+        imageElement.src = "images/page1/hover.jpg";
+        imageElement.alt = "a girl blinking eyes";
+    }
+    function changeToNormal(){
+        var imageElement = document.getElementById("profile_img");
+        imageElement.src = "images/page1/1.1.jpg";
+        imageElement.alt = "agirl opening eyes";
+    }
+    </script>
+</head>
+<body>
+    <main>
+    <header>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="myself">
+    <img class="portrait" src = "images/page1/1.1.jpg" id="profile_img" alt="a girl opening eyes" onmouseover= "changeToBlink()" onmouseout="changeToNormal()">
+    </div>
+    </header>
+    <div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html" class="underline_link">Design Projects</a></li>
+                <li><a href="illustration.html" class="item-link">Illustrations</a></li>
+                <li><a href="about.html" class ="item-link">About Me</a></li>
+                <li><a href="helloUM.html" class ="item-link">Hello UM</a></li>
+            </ul>       
+        </nav>
+    </div>
+    <!--default showing the design projects page-->
+
+    <br>
+    <div class="product_intro" id="main" tabindex="-1">
+    <h1>Infolab Project-Baby Name Lab</h1>
+    <p>Brief introduction: An interactive product that enabling parents to have a customizable list of names for their newborn baby and narrow down name choices.Problem: For parents, finding the perfect name for their baby can be a sweet burden which means pressure, simply because there are too many options of baby names. Solution: With Baby Bracket, parents are able to have more inspirations on their baby name choices with the ability to customize a baby name list and interactive way to narrow down the list until reaching the idea name that already in their heart.</p>
+    <img class="project-pic2" src = images/page1/1.2.jpg alt="prototype of the product">
+    </div>
+</main>
+<footer>Copyright &copy; Chunying Zhang</footer> 
+</body>
+</html>

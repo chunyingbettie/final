@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <title>Betty Zhang</title>
+    <link rel="stylesheet" type="text/css" href="home.css"/>
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <link rel="stylesheet" type="text/css" href="lightbox.min.css">
+    <script>
+            function changeToBlink(){
+                var imageElement = document.getElementById("profile_img");
+                imageElement.src = "images/page1/hover.jpg";
+                imageElement.alt = "a girl blinking eyes";
+            }
+            function changeToNormal(){
+                var imageElement = document.getElementById("profile_img");
+                imageElement.src = "images/page1/1.1.jpg";
+                imageElement.alt = "agirl opening eyes";
+            }
+            function check(){
+                var name=document.getElementById("name");
+                var email=document.getElementById("email");
+                var message=document.getElementById("text");
+                if (name==null||name.value==""||email==null||email.value==""||message==null||message.value=="")
+                {
+                    alert("please fill in the columns");
+                    return false;
+                }
+                else return true;
+            }
+    </script>
+    <script src="lightbox-plus-jquery.min.js"></script>
+</head>
+<body>
+    <main>
+    <header>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="myself">
+        <img class="portrait" src = "images/page1/1.1.jpg" id="profile_img" alt="agirl opening eyes" onmouseover= "changeToBlink()" onmouseout="changeToNormal()">
+    </div>
+    </header>
+    <div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html" class="item-link">Design projects</a></li>
+                <li><a href="illustration.html" class="item-link">Illustrations</a></li>
+                <li><a href="about.html" class ="item-link">About me</a></li>
+                <li><a href="helloUM.html" class="underline_link">Hello UM</a></li>
+            </ul>       
+        </nav>
+    </div>
+    <h1 id="main" tabindex="-1">Design Jam</h1>
+    <div class="jam">
+    <img class="fun1" src = images/page5/5.1.jpg alt=""></div>
+    <h1>Sports Spirit</h1>
+    <div class="sport">
+    <img class="fun2" src = images/page5/5.2.jpg alt=""></div>
+    <h1>Having fun</h1>
+    <div class="bar">
+    <img class="fun3" src = images/page5/5.3.jpg alt=""></div>
+    </main>
+<footer>Copyright &copy; Chunying Zhang</footer> 
+</body>
+</html>
